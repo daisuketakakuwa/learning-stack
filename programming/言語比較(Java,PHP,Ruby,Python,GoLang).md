@@ -50,5 +50,5 @@ Ruby<br>
 Python<br>
 ・Pythonをインストールして、pythonコマンド実行。<br>
 ・Python専用のWEBサーバ上で実行。WSGIかASGIに準拠するサーバ上で実行。<br>
-・Browser <-> Apache/Nginx <-> WSGIサーバ のように 静的資源(html/css/js)はWEBサーバ、動的資源(REST API)はWSGIサーバの構成が一般的👉<br>
+・Browser ⇔ Apache/Nginx ⇔ WSGIサーバ のように 静的資源(html/css/js)はWEBサーバ、動的資源(REST API)はWSGIサーバの構成が一般的👉<br>
 👉JSPのようにWSGIサーバ側で動的にページを生成可能(DjangoのMVCパターン)<br>

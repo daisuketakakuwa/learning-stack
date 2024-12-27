@@ -1,0 +1,38 @@
+## ファイル構成
+
+```
+$PGDATA/
+
+ |_base/
+
+   |_{DB1のOID}/ -- DBごとにディレクトリを切っている
+
+     |_{Table1のOID}   ←テーブルファイル
+     |_{Table2のOID}.1 ←量が多い場合は項番をつける
+     |_{Table2のOID}.2 ←量が多い場合は項番をつける
+
+     |_{Table1のOID}.fsm ← テーブルごとに空き領域マップを保持
+     |_{Table1のOID}.vm　← テーブルごとに可視性マップを保持
+
+     |_{pg_classのOID} ← テーブルごとに保持されるシステムカタログ（他にも色々)
+
+ |_global/
+
+    |_ {pg_databaseのOID} ← クラスタをまたぐシステムカタログ
+
+ |_pg_wal
+ |_pg_stat
+ |_pg_tblspc
+ |_pg_logical
+ |_postgresql.cojnf
+```
+
+### 空き領域マップ（FSM/Free Space Map）
+
+### 可視性マップ（VM/Visibility Map)
+
+## テーブルファイルの中身
+ヘッダ（xmin, xmax, 空き領域
+ページ
+
+
